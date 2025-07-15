@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout stage'){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/DevopsWorking/11-script.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/donohoe14/script.git']])
             }
         }
         stage('script usage'){
